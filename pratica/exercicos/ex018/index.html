@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eater&family=Pacifico&display=swap');
+
+        @font-face {
+            font-family: 'Little Bird';
+            src: url(littlebird.ttf);
+        }
+
+        .pacifico-regular {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-size: 1.25em;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes em CSS</h1>
+    <p>Podemos configurar fontes padrão do sistema</p>
+    <p class="pacifico-regular">Ou então usar uma fonte do Google Fonts</p>
+    <p class="Little Bird">Ou ainda usar um arquivo local de fontes</p>
+</body>
+</html>

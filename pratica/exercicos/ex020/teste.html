@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação em CSS</title>
+    <style>
+   
+        article {
+            display: inline-block;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        article#caixa1 {
+            background-color: darkred;
+        }
+
+        article#caixa2 {
+            background-color: darkolivegreen;
+        }
+        
+        article#caixa3, article#caixa5 {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificadores em CSS</h1>
+    <p>No exercício anterior, vimos as <mark>classes</mark> e entendemos que vários elementos podem ter uma mesma classe. Mas se quisermos <mark>identificar</mark> os elementos, dando um "nome" específico para cada um, podemos usar os IDs. Em um mesmo documento, <strong>não podemos ter dois elementos com o mesmo ID!</strong></p>
+
+
+    <section>
+        <article id="caixa1"></article>
+        <article id="caixa2"></article>
+        <article id="caixa3"></article>
+        <article id="caixa4"></article>
+        <article id="caixa5"></article>
+    </section>
+
+</body>
+</html>
