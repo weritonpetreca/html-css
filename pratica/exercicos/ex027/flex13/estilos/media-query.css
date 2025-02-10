@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 610px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header span.material-symbols-outlined {
+        display: none;
+    }
+
+    header h1 {
+        flex: 0 0 180px;
+        align-self: center;
+    }
+  
+    header nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+    header nav ul li {
+        flex: 0 0 auto;
+    }
+}

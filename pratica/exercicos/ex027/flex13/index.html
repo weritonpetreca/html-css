@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="blockMenu()">
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-symbols-outlined" onclick="displayMenu()">menu</span>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Teste de Flexbox</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe porro accusantium error, asperiores ex non quasi excepturi fugiat qui officiis voluptatum, optio vel totam cum magni. Ipsam, velit ratione veritatis officia alias quisquam, sapiente saepe doloribus illo at possimus molestiae dolore quo laborum vero. Voluptatibus nulla sapiente consequatur assumenda. Architecto itaque reiciendis consequatur voluptates sed distinctio. Ipsum quam aliquam at perspiciatis fugiat</p>
+            <p>Enim inventore molestiae sapiente dolore quaerat a sequi omnis pariatur, ratione distinctio officiis ea, cum maxime facere nulla. Deleniti dolorem repellendus labore placeat quae voluptate, doloremque ex iusto ullam quasi soluta dolor a magni nemo sint possimus distinctio! Expedita cupiditate, hic eat sint quo nihil eum sequi commodi, voluptatibus nulla labore, fugiat, error quod voluptas provident </p>
+        </article>
+    </main>
+    <script>
+        function displayMenu() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+
+        function blockMenu() {
+            if (window.innerWidth >= 610) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
